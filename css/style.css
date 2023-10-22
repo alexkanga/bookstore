@@ -659,6 +659,17 @@ form.signup{
   gap: 2rem;
 
 }
+/* form.signup p a {
+  color: var(--main-bleu);
+} */
+
+form.signup p a.signup-href {
+  color: var(--main-dark-grey);
+}
+
+form.signup p a.signup-texte-inscription{
+  color : var(--main-bleu, #0077B6);
+}
 
   
 
@@ -798,7 +809,7 @@ form.signup h2{
   display: flex;
   color: var(--main-dark-blue, #07304A);
   gap: 0.5rem;
-  border: 1px solid #FFF;
+  border: 1px solid var(--main-dark-grey);
   padding: 0.2rem;
   width: 25rem;
   justify-content: center;
@@ -809,11 +820,11 @@ form.signup h2{
 }
 .google_signup p{
   padding-top: 0.5rem;
-  color: #FFF;
+  color: #B8B8B8;
 }
 
 .google_signup a{
-  color: #FFF;
+  color: #B8B8B8;
   text-decoration: none;
 }
 
@@ -833,17 +844,17 @@ form.signup h2{
   width: 25rem;
   background-color: transparent;
 
-  border: 1px solid var(--main-white);
+  border: 1px solid var(--main-dark-grey);
   /* border-radius: 8px; */
   padding: 12px 25px;
 
-  color: var(--main-white);
+  color: var(--main-dark-grey)
   
 }
 
 .signup input::placeholder {
 
-  color: var(--main-white);
+  color: var(--main-dark-grey);
 
   font-size: 1.2rem;
   text-align: center;
@@ -874,13 +885,11 @@ input.connexion {
   cursor: pointer;
   border-radius: 0.8rem;
   padding: 2rem 2rem 4rem 2rem;
-
-  
  
 }
 
 .cadre{
-  border: 0.1rem solid var(--main-dark-or);
+  border: 0.1rem solid var(--main-dark-blue);
   display: flex;
   flex-direction: column;
   border-radius: 0.8rem;
