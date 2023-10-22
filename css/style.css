@@ -671,6 +671,27 @@ form.signup p a.signup-texte-inscription{
   color : var(--main-bleu, #0077B6);
 }
 
+form.contact div input{
+  color:var(--main-white, #FFF)
+
+}
+
+form.contact textarea{
+  display: flex;
+width: 30.1rem;
+height: 13.4rem;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+flex-shrink: 0;
+border: 1px solid var(--main-dark-blue, #07304A);
+}
+
+
+form.signup textarea:focus{
+  outline: none;
+}
+
   
 
 .google_signup{
@@ -679,7 +700,7 @@ form.signup p a.signup-texte-inscription{
   gap: 0.5rem;
   border: 1px solid #B8B8B8;
   padding: 0.2rem;
-  width: 25rem;
+  width: 30rem;
   justify-content: center;
 }
 .google_signup img{
@@ -1023,3 +1044,38 @@ flex:1;
   line-height: 3.2rem; /* 177.778% */
   /* background-color: red; */
 }
+
+/* contact */
+
+.contact{
+  background-color: var(--main-white);
+  border: 1px solid var(--main-bleu);
+  margin-top: 5rem;
+  padding: 1rem 0;
+}
+
+form.contact{
+  border: 0;
+}
+form.contact p{
+  padding: 1rem 0;
+}
+.contact-div p.infos{
+color: #07304A;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 500;
+line-height: 3.2rem; /* 177.778% */;
+padding: 0 2rem;
+border: 0;
+margin: 0 2rem;
+}
+
+.contact-div p.infos i{
+  margin-right: 2rem;
+}
+
+.contact-left{
+  padding: 1rem 1rem;
+}
+
