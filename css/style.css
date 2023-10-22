@@ -70,6 +70,11 @@ nav a:visited {
     color: var(--main-dark-blue);
   }
 
+  input:focus{
+    outline: none !important;
+    }
+
+
 /* ***************** */
 /* GENERAL SECTION */
 /* ***************** */
@@ -354,7 +359,7 @@ margin: auto 0;
 
 /* SECTION LIVRES */
 .categorie{
-
+margin-bottom: 2rem;
 }
 .categorie-titre{
   display: flex;
@@ -430,4 +435,150 @@ gap: 1.6rem 1.7rem;
 flex-wrap: wrap;
 }
 
+
 /* SECTION LIVRES */
+
+.div-button-voir-toute-librairie{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-toute-librairie{
+  display: flex;
+width: 31.6rem;
+padding: 1.2rem 2rem;
+justify-content: center;
+align-items: center;
+gap: 0.8rem;
+border-radius: 0.8rem;
+border: 1px solid var(--main-white, #FFF);
+background: #F13223;
+/* style text button */
+color: var(--main-white);
+/* BR */
+
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: 2.4rem; /* 150% */ 
+
+}
+
+.separator {
+  display: flex;
+  margin: 2rem 0;
+}
+
+
+/* NEWSLETTER */
+.newsletter{
+  display: flex;
+padding: 1.6rem 0rem;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 10rem;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.newsletter-left p{
+  color:var(--main-dark-blue, #07304A);
+
+/* P */
+
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 3.2rem;
+}
+.newsletter-left p.newsletter-first-paragraphe{
+  color:var(--main-dark-blue, #07304A);
+/* P */
+
+
+/* BL */
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 500;
+line-height: 3.2rem; /* 177.778% */
+}
+
+.newsletter-right{
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.newsletter-right input{
+  color: #07304A;
+text-align: center;
+border: 0;
+border-bottom: 1px solid #07304A;
+padding:1rem 0 ;
+width: 25rem;
+}
+
+.feature-image{
+
+height: 17.8rem;
+flex-shrink: 0; 
+}
+.feature-image img{ 
+  width: 100%;
+}
+
+
+.newsletter-right button{
+  display: flex;
+width: 11.7rem;
+padding: 1.2rem 2rem;
+justify-content: center;
+align-items: center;
+gap: 0.8rem;
+
+/* style text button */
+border-radius: 0.8rem;
+background: #0077B6;
+
+color: var(--main-white, #FFF);
+
+/* BR */
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: 2.4rem; /* 150% */
+
+}
+
+
+
+
+/* NEWSLETTER */
+
+
+
+footer{
+  display: flex;
+  
+  height: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  padding: 2rem 0;
+}
+
+footer p{
+  width: 112rem;
+  flex-shrink: 0; 
+  color: var(--main-dark-blue, #07304A);
+text-align: center;
+
+/* BS */
+
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.4rem; /* 171.429% */
+}
