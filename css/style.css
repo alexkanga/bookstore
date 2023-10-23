@@ -672,7 +672,14 @@ form.signup p a.signup-texte-inscription{
 }
 
 form.contact div input{
-  color:var(--main-white, #FFF)
+  /* color:var(--main-white, #FFF); */
+  color : var(--main-bleu, #0077B6);
+
+}
+
+form.contact div input::placeholder{
+  /* color:var(--main-white, #FFF); */
+  color : var(--main-bleu, #0077B6);
 
 }
 
