@@ -75,6 +75,10 @@ nav a:visited {
     outline: none !important;
     }
 
+    button, i {
+      cursor: pointer;
+    }
+
 
 /* ***************** */
 /* GENERAL SECTION */
@@ -1099,18 +1103,24 @@ margin: 0 2rem;
   display: flex;
   color:var(--main-dark-blue, #07304A);
   gap: 0 2rem;
+  width: 100%;
 }
 
 .produits-left{
-
+/* background-color: #b8b8b8; */
 }
 .produits-right{
-
+display: flex;
+flex-direction: column;
+gap: 2.5rem;
+/* background-color: #F00; */
+width: 100%;
 }
 
 .produits-search{
   display: flex;
-  width: 73.5rem;
+  /* width: 73.5rem; */
+  width: 100%;
   align-items: center;
   gap: 15.8rem;
   border: 1px solid #228B22;var(--main-bleu);
@@ -1119,7 +1129,8 @@ margin: 0 2rem;
 
 .produits-search p.trier{
   display: flex;
-width: 12.8rem;
+/* width: 12.8rem; */
+
 height: 3.8rem;
 /* flex-direction: column; */
 justify-content: center;
@@ -1128,7 +1139,7 @@ flex-shrink: 0;
 
 .products-found{
   display: flex;
-  width: 22.3rem;
+  /* width: 22.3rem; */
   padding: 1rem;
   align-items: center;
   gap: 1rem;
@@ -1149,7 +1160,7 @@ line-height: 3.2rem; /* 177.778% */
 
 .produits-search-by{
   display: flex;
-  width: 35.1rem;
+  /* width: 35.1rem; */
   align-items: flex-end;
   gap: 0.4rem;
   flex-shrink: 0;
@@ -1157,7 +1168,8 @@ line-height: 3.2rem; /* 177.778% */
 
 .trier{
   display: flex;
-width: 12.8rem;
+/* width: 12.8rem; */
+width: 10.8rem;
 height: 3.8rem;
 flex-direction: column;
 justify-content: center;
@@ -1282,8 +1294,8 @@ align-items: center;
 .articles{
   display: flex;
   flex-direction: column;
-  gap:2rem;
-  marg
+  gap:1.5rem;
+  
 }
 
 .article{
@@ -1293,7 +1305,7 @@ gap: 1.3rem;
 }
 
 .article img{
-  width: 18.2rem;
+  /* width: 18.2rem; */
 height: 25.6rem;
 
 }
@@ -1306,7 +1318,7 @@ gap: 2.4rem;
 }
 
 .article-right p:nth-of-type(1){
-  width: 54rem;
+  /* width: 54rem; */
   color: #000;
 /* BL */
 
@@ -1344,5 +1356,13 @@ line-height: 3.2rem; /* 177.778% */
 border: 1px solid var(--Bleu, #0077B6);
 background: #228B22;
 color: var(--main-white);
+cursor: pointer;
+
+}
+
+.pagination img{
+  width: 70rem;
+height: 11.8rem;
+flex-shrink: 0; 
 
 }
