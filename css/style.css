@@ -685,7 +685,13 @@ align-items: center;
 gap: 1rem;
 flex-shrink: 0;
 border: 1px solid var(--main-dark-blue, #07304A);
+color : var(--main-bleu, #0077B6);
+text-align: center;
 }
+
+
+
+
 
 
 form.signup textarea:focus{
