@@ -1059,10 +1059,11 @@ form.contact{
 }
 form.contact p{
   padding: 1rem 0;
+  font-size: 1.2rem;
 }
 .contact-div p.infos{
 color: #07304A;
-font-size: 1.8rem;
+font-size: 1.6rem;
 font-style: normal;
 font-weight: 500;
 line-height: 3.2rem; /* 177.778% */;
