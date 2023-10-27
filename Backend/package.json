@@ -6,11 +6,16 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "author": "Alexandre Kanga",
   "license": "ISC",
+  "private": false,
   "dependencies": {
     "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
