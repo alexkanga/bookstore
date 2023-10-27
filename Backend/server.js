@@ -6,7 +6,25 @@ import path from "node:path";
 const server = http.createServer((req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
 
-  if (req.url === "/auth/register" && req.method === "POST") {
+  if (req.url === "/" && req.method === "GET") {
+    fs.readFile("../index.html", "utf-8", (err, data) => {
+      if (!err) {
+        res.setHeader("content-type", "text/html");
+        res.end(data);
+      }
+    });
+    // on revoie les utilisateur apres les avoir transformés en chaine de caractère
+  } else if (req.url === "/contact" && req.method === "GET") {
+    fs.readFile("../contact.html", "utf-8", (err, data) => {
+      if (!err) {
+        res.setHeader("content-type", "text/html");
+        res.end(data);
+      }
+    });
+    // on revoie les utilisateur apres les avoir transformés en chaine de caractère
+  }
+  
+  else if (req.url === "/auth/register" && req.method === "POST") {
     let body = "";
     req.on("data", (data) => {     
       body += data;
@@ -77,6 +95,6 @@ const server = http.createServer((req, res) => {
   
 }); 
 
-server.listen(4000, () => {
+server.listen(process.env.PORT || 4000, () => {
   console.log("server running");
 });
