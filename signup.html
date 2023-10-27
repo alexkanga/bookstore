@@ -66,7 +66,8 @@
             <div class="heros-right">
               
               <div class="form">
-                <form class="signup" action="accueil.html">
+                
+                <form class="signup">
                   <h2>Créer votre compte gratuitement</h2>
                   <div class="google_signup">
                     <a href="accueil.html"
@@ -75,12 +76,19 @@
                     <p><a href="accueil.html">Continue with Google</a></p>
                   </div>
                   <div class="main-white">ou</div>
-                  <div><input type="text" placeholder="Adresse email" /></div>
-                  <div><input type="text" placeholder="Mot de passe" /></div>
-                  <div><input type="text" placeholder="Confirmez votre mot de passe" /></div>
-                  <a href="accueil.html"
+                  
+                  <div><input type="text" name="name"  placeholder="enter a username"/></div>
+                  <div><input type="email" placeholder="Adresse email" name="email" /></div>
+                  <div><input type="password" placeholder="Mot de passe" name="password" /></div>
+                  <div><input type="password" placeholder="Confirmez votre mot de passe" name="cpassword" /></div>
+                  <!-- <a href="accueil.html"
                     ><input type="button" class="connexion" value="S'inscrire" />
-                  </a>
+                  </a> -->
+                  <input type="submit" class="connexion" value="S'inscrire" />
+
+                  
+                  <p style="color: white;"> <a href="signin.html" style="color: white; text-decoration: none;"> Vous avez déjà un compte ?  Se connecter ici</a></p>
+                  <div class="alerte"></div>
                 </form>
               </div>
             </div>
@@ -102,5 +110,7 @@
       </footer>
       
     </div>
-  </body>
+    <script src="./js/session.js"></script>
+    <script src="./js/register.js"></script>
+  </body> 
 </html>
